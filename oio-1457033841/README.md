@@ -1,0 +1,29 @@
+# URL Parser
+
+## Problem
+Given a valid URL string input, parse out the protocol, host, pathname, and query parameters.
+
+## Instructions
+Please implement the `parse_from_string` method.
+Please do not use any URL, URI, or regular expression modules or libraries.
+Feel free to make simplifying assumptions about supported URL formats, and handle more edge cases as you get further along as time allows.
+
+Please assume the following:
+- input is well-formed, and string fields only contain alpha-numeric characters (no spaces etc).
+- login info and port number are considered part the host component.
+
+For example,
+```python
+# Should print something like:
+# protocol: 'https', host: 'www.google.com', pathname: '', query_hash: {}
+print ParsedUrl.parse_from_string("https://www.google.com");
+
+# Should print something like:
+# protocol: 'http', host: 'test.com:8888', pathname: 'order/search', query_hash: {'keyword': 'awesome'}
+print ParsedUrl.parse_from_string("http://test.com:8888/order/search?keyword=awesome");
+```
+
+## Submission
+Upon completion, please follow the instructions described in the website (where you found the instructions to download the project) to submit your solution. You can submit as many times as you prefer. Your last submission will be used for evaluation as well as marking the end of your coding assessment.
+
+Lastly, do not be concerned if you are running a little bit over time (0-10 minutes). We do not penalize moderately tardy submissions.
